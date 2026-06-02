@@ -1,0 +1,18 @@
+# Home page config - Chinese
+[home]
+  rss = 10
+
+  [home.profile]
+    enable = true
+    gravatarEmail = ""
+    avatarURL = "/images/avatar.webp"
+    avatarLinkURL = ""
+    title = "86cn"
+    subtitle = "记录生活，发现美好"
+    typeit = false
+    social = true
+    disclaimer = ""
+
+  [home.posts]
+    enable = true
+    paginate = 7
