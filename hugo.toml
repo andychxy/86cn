@@ -11,13 +11,13 @@ timeout = "30s"
 
 [languages]
   [languages.zh]
-    languageName = "中文"
-    languageCode = "zh-CN"
+    label = "中文"
+    locale = "zh-CN"
     weight = 1
 
   [languages.en]
-    languageName = "English"
-    languageCode = "en"
+    label = "English"
+    locale = "en-US"
     weight = 2
 
 [author]
