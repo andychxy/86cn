@@ -1,0 +1,42 @@
+{{- /*
+Usage: {{< video "my-video.mp4" >}}
+       {{< video "https://youtube.com/embed/VIDEO_ID" >}}
+       {{< video "https://www.bilibili.com/video/BVxxxxx" >}}
+
+Supports: local files (place in /static/videos/), YouTube, Bilibili.
+If URL contains "bilibili.com", auto-converts to embed format.
+*/ -}}
+
+{{- $src := .Get 0 -}}
+
+{{- if not $src -}}
+  {{- errorf "video shortcode requires a src argument" -}}
+{{- end -}}
+
+{{- /* Bilibili: convert share URL to embed URL */ -}}
+{{- if in $src "bilibili.com" -}}
+  {{- $src = replace $src "bilibili.com/video/" "player.bilibili.com/player.html?bvid=" -}}
+  {{- $src = replace $src "www.bilibili.com" "player.bilibili.com" -}}
+{{- end -}}
+
+{{- $isExternal := or (in $src "youtube.com") (in $src "player.bilibili.com") (in $src "youtu.be") -}}
+
+{{- if $isExternal -}}
+<figure class="video-embed">
+  <iframe
+    src="{{ $src }}"
+    frameborder="0"
+    allowfullscreen
+    loading="lazy"
+    style="width:100%;aspect-ratio:16/9;">
+  </iframe>
+</figure>
+{{- else -}}
+<video
+  src="{{ $src | relURL }}"
+  controls
+  preload="metadata"
+  style="width:100%;border-radius:8px;">
+  您的浏览器不支持视频播放。
+</video>
+{{- end -}}
