@@ -98,7 +98,7 @@ anchor_icon: "#"
 reimu_cursor:
   enable: false
 
-icon_font: 4552607_ex15nbittbh
+icon_font: false
 
 font:
   enable: true
