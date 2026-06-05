@@ -1,0 +1,246 @@
+########################################
+# Basic Configuration
+########################################
+
+menu:
+  - name: home
+    url: ""
+  - name: archives
+    url: "archives"
+  - name: about
+    url: "about"
+
+mainSections: ["posts"]
+
+yearFormat: "2006"
+monthFormat: "2006-01"
+dateFormat: "2006-01-02"
+timeFormat: "2006-01-02 15:04:05"
+
+author: andychxy
+email: ""
+description: "记录生活，发现美好"
+subtitle:
+  enable: false
+  text: "记录生活，发现美好"
+
+banner: "images/banner.webp"
+avatar: "images/avatar.webp"
+
+cover: false
+toc: true
+
+open_graph:
+  enable: true
+
+excerpt_link: "阅读更多"
+
+footer:
+  since: 2026
+  powered: true
+  count: true
+  busuanzi: true
+  icon:
+    url: "../images/taichi.png"
+    rotate: true
+    mask: true
+
+sidebar:
+  position: right
+  menu: true
+  article:
+    show_common: true
+
+widgets:
+  - category
+  - tag
+  - tagcloud
+  - recent_posts
+
+category_limits: 10
+tag_limits: 10
+recent_posts_limits: 5
+tagcloud_limits: 20
+
+only_show_capsule_in_index: false
+uppercase_capsule: true
+
+show_update_time: false
+
+summary:
+  enable: false
+  style: 'subtitle'
+
+rss:
+  limit: 10
+  showFullContent: false
+  showCopyright: false
+
+sort_order:
+  taxonomy:
+    category: date-reverse
+    tag: date-reverse
+  archive: date-reverse
+  home: date-reverse
+
+########################################
+# CSS
+########################################
+
+layout:
+  max_width: 1200px
+
+triangle_badge:
+  enable: false
+
+anchor_icon: "#"
+
+reimu_cursor:
+  enable: false
+
+icon_font: 4552607_ex15nbittbh
+
+font:
+  enable: true
+  article:
+    - Mulish
+    - Noto Serif SC
+  code:
+    - Menlo
+    - Monaco
+    - Consolas
+
+local_font:
+  article:
+    - "-apple-system"
+    - PingFang SC
+    - Microsoft YaHei
+    - sans-serif
+  code:
+    - Menlo
+    - Monaco
+    - Consolas
+    - monospace
+
+dark_mode:
+  enable: auto
+
+########################################
+# Analytics
+########################################
+
+baidu_analytics: false
+google_analytics: false
+clarity: false
+
+########################################
+# Markdown Display
+########################################
+
+code_block:
+  expand: false
+
+clipboard:
+  success:
+    en: "Copied!"
+    zh-CN: "复制成功"
+  fail:
+    en: "Copy failed"
+    zh-CN: "复制失败"
+  copyright:
+    enable: false
+
+math:
+  katex:
+    enable: false
+  mathjax:
+    enable: false
+
+########################################
+# Comment system
+########################################
+
+comment:
+  title:
+    en: "Leave a comment"
+    zh-CN: "说些什么吧"
+  default: "" # no comment system by default
+
+########################################
+# Animation
+########################################
+
+preloader:
+  enable: false
+
+animation:
+  enable: true
+  options:
+    header:
+      title: slide-up
+      subTitle: slide-down
+    home:
+      post: fade-up
+      widget: fade-up
+      sidebar: fade-up
+    article:
+      whole: fade-up
+      date: zoom-in
+      category: zoom-in
+      tag: zoom-in
+      comment: zoom-in
+      reading: zoom-in
+      nav: fade-up
+    archive:
+      whole: fade-up
+      tag: zoom-in
+      category: zoom-in
+      section: fade-up
+      nav: fade-up
+
+firework:
+  enable: false
+
+########################################
+# Top Button
+########################################
+
+top:
+  enable: true
+  position: right
+  icon:
+    url: "../images/taichi.png"
+    rotate: true
+    mask: true
+
+outdate:
+  enable: false
+
+share: []
+
+home_categories:
+  enable: false
+
+injector:
+  head_begin: []
+  head_end: []
+  body_begin: []
+  body_end: []
+
+pjax:
+  enable: false
+
+quicklink:
+  enable: false
+
+service_worker:
+  enable: false
+
+live2d:
+  enable: false
+
+pace:
+  enable: true
+
+pangu:
+  enable: false

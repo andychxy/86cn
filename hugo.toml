@@ -1,12 +1,10 @@
 baseURL = "https://86cn.top"
 title = "86cn"
-theme = "DoIt"
-themesDir = "themes"
+theme = "reimu"
 defaultContentLanguage = "zh"
 hasCJK = true
 enableRobotsTXT = true
 enableEmoji = true
-enableGitInfo = false
 timeout = "30s"
 
 [languages]
@@ -14,60 +12,19 @@ timeout = "30s"
     label = "中文"
     locale = "zh-CN"
     weight = 1
+    title = "86cn"
+    contentDir = "content"
 
   [languages.en]
     label = "English"
     locale = "en-US"
     weight = 2
+    title = "86cn"
+    contentDir = "content"
+
+[params]
+  mainSections = ["posts"]
 
 [author]
   name = "andychxy"
   link = "https://github.com/andychxy"
-
-[image]
-  cacheRemote = true
-  optimise = true
-
-[params]
-  version = "1.0"
-  defaultTheme = "auto"
-  gitRepo = "https://github.com/andychxy/86cn"
-  enablePWA = false
-  mainSections = ["posts"]
-  dateFormat = "2006-01-02"
-
-[params.header]
-  themeChangeMode = "select"
-
-[params.header.title]
-  name = "86cn"
-  typeit = false
-
-[params.footer]
-  enable = true
-  hugo = true
-
-[params.sitemap]
-  enable = true
-
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "首页"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    identifier = "posts"
-    name = "文章"
-    url = "/posts/"
-    weight = 2
-  [[menu.main]]
-    identifier = "tags"
-    name = "标签"
-    url = "/tags/"
-    weight = 3
-  [[menu.main]]
-    identifier = "about"
-    name = "关于"
-    url = "/about/"
-    weight = 4

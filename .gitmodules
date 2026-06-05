@@ -1,3 +1,6 @@
 [submodule "themes/DoIt"]
 	path = themes/DoIt
 	url = https://github.com/HEIGE-PCloud/DoIt.git
+[submodule "themes/reimu"]
+	path = themes/reimu
+	url = https://github.com/D-Sketon/hugo-theme-reimu.git
