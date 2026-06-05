@@ -96,7 +96,7 @@ layout:
 triangle_badge:
   enable: false
 
-anchor_icon: "#"
+anchor_icon: false
 
 reimu_cursor:
   enable: false
