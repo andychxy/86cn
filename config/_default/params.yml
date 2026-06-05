@@ -5,10 +5,13 @@
 menu:
   - name: home
     url: ""
+    icon: false
   - name: archives
     url: "archives"
+    icon: false
   - name: about
     url: "about"
+    icon: false
 
 mainSections: ["posts"]
 
