@@ -1,0 +1,20 @@
+{{- define "main" -}}
+<main class="main list">
+    {{- if .Title -}}
+    <header class="page-header">
+        <h1>{{ .Title }}</h1>
+    </header>
+    {{- end -}}
+    {{- range .Paginator.Pages -}}
+    <article class="article list">
+        <header>
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        </header>
+        {{- if .Description -}}
+        <p>{{ .Description }}</p>
+        {{- end -}}
+    </article>
+    {{- end -}}
+    {{- partial "pagination.html" . -}}
+</main>
+{{- end -}}
