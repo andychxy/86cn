@@ -29,11 +29,7 @@ jobs:
         run: hugo --gc --minify
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLAREAPITOKEN }}
-          accountId: ${{ secrets.CLOUDFLAREACCOUNTID }}
-          projectName: 86cn
-          directory: public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+        run: npx wrangler pages deploy public --project-name=86cn
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLAREAPITOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLAREACCOUNTID }}
