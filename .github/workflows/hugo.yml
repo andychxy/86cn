@@ -36,4 +36,4 @@ jobs:
           projectName: 86cn
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          productionBranch: main
+          branch: main
