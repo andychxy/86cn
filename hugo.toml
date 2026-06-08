@@ -24,7 +24,7 @@ timeout = "30s"
 
 [params]
   mainSections = ["posts"]
-  banner = "/images/banner.jpg"
+  banner = "/images/banner-v2.jpg"
 
 [author]
   name = "andychxy"
