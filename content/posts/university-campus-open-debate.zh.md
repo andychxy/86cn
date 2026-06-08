@@ -1,9 +1,9 @@
 ---
 date: 2026-06-08
-draft: true
+draft: false
 title: "大学校门，该开还是该关？"
 cover: "https://images.unsplash.com/photo-1562774053-701939374585?w=1200"
-description: "新冠疫情后，大学校园封闭管理引发广泛争议。但争议中的许多对比并不诚实——欧美大学的"开放"和中国的"封闭"，远没有表面上看起来那么简单。"
+description: "新冠疫情后，大学校园封闭管理引发广泛争议。但争议中的许多对比并不诚实——欧美大学的开放和中国的封闭，远没有表面上看起来那么简单。"
 translationKey: university-campus-open-debate
 ---
 

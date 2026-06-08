@@ -1,6 +1,6 @@
 ---
 date: 2026-06-08
-draft: true
+draft: false
 title: "Should Universities Open Their Gates? An Honest Look at the Global Reality"
 cover: "https://images.unsplash.com/photo-1562774053-701939374585?w=1200"
 description: "The debate about whether Chinese universities should open their campuses to the public is full of double standards. This article challenges the narrative that Western campuses are open while Chinese ones are not, and asks what the real differences actually are."
