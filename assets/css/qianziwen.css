@@ -1,0 +1,33 @@
+/* 千字文专用背景 - 仿古纸张风格 */
+.single-article {
+  background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b5 50%, #d4c4a8 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.single-article .article-content-container {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 确保文字在浅色背景上清晰可读 */
+.single-article .article-content {
+  color: #2c2c2c;
+}
+
+.single-article .article-content h1,
+.single-article .article-content h2,
+.single-article .article-content h3 {
+  color: #8b4513;
+}
+
+.single-article .article-content blockquote {
+  border-left-color: #8b4513;
+  background: rgba(139, 69, 19, 0.05);
+}

@@ -5,23 +5,23 @@ cover: "/videos/qzw.mp4"
 categories: ["传统文化"]
 tags: ["千字文", "国学", "启蒙"]
 description: "《千字文》全文一字不重复，是南朝周兴嗣编纂的启蒙经典。"
-params:
-  style: |
-    <style>
-    article {
-      background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b5 50%, #d4c4a8 100%);
-      background-attachment: fixed;
-      min-height: 100vh;
-    }
-    article .article-content {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(3px);
-      border-radius: 8px;
-      padding: 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-    </style>
 ---
+
+<style>
+#main .article-content-container {
+  background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b5 50%, #d4c4a8 100%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+#main .article-content-container .article-content {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 2rem;
+  border-radius: 8px;
+}
+</style>
 
 ## 《千字文》全文
 

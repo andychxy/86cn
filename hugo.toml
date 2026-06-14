@@ -29,3 +29,8 @@ timeout = "30s"
 [author]
   name = "andychxy"
   link = "https://github.com/andychxy"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
