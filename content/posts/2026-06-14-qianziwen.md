@@ -1,7 +1,6 @@
 ---
 title: "千字文全文"
 date: 2026-06-14
-cover: "/videos/qzw.mp4"
 categories: ["传统文化"]
 tags: ["千字文", "国学", "启蒙"]
 description: "《千字文》全文一字不重复，是南朝周兴嗣编纂的启蒙经典。"
