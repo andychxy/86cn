@@ -8,13 +8,13 @@ description: "《千字文》全文一字不重复，是南朝周兴嗣编纂的
 ---
 
 <style>
-#main .article-content-container {
-  background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b5 50%, #d4c4a8 100%);
+.article-inner {
+  background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b5 50%, #d4c4a8 100%) !important;
   padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
-#main .article-content-container .article-content {
+.article-inner .article-entry {
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
